@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1226">
+  <meta name="description" content="Signal Grid: a calm, shareable Lights Out puzzle with a keyboard-friendly interface.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <title>Signal Grid — clear the lights</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><span class="brand-mark" aria-hidden="true">▦</span><span>Signal Grid</span><a href="https://github.com/himanshugargnmims-cyber/signal-grid" target="_blank" rel="noopener noreferrer">GitHub ↗</a></header>
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">A five by five logic puzzle</p>
+      <h1 id="title">Make every light go dark.</h1>
+      <p>Press a tile to flip it and its four neighbors. Every puzzle has a solution; find the fewest moves you can.</p>
+    </section>
+    <section class="game-card" aria-label="Signal Grid game">
+      <div class="game-head"><div><span class="label">Puzzle seed</span><strong id="seed"></strong></div><div><span class="label">Moves</span><strong id="moves">0</strong></div></div>
+      <p id="status" class="status" aria-live="polite"></p>
+      <div id="board" class="board" aria-label="Puzzle tiles"></div>
+      <p id="hint-text" class="hint-text" aria-live="polite"></p>
+      <div class="actions"><button id="new-game" class="primary">New puzzle</button><button id="restart">Restart</button><button id="hint">Hint</button><button id="share">Share seed</button></div>
+    </section>
+    <footer><p><strong>How to play</strong> Tap a tile or use Tab and the arrow keys to move, then Space or Enter to flip. The board wraps focus at edges.</p><p>Made for curious minds · No tracking · No sign-in</p></footer>
+  </main>
+</body>
+</html>
